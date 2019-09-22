@@ -14,7 +14,7 @@ face_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 #cap=cv2.VideoCapture(0)
-cap = cv2.imread('lov.jpg')
+cap = cv2.imread('dad.jpg')
 
 
 while True:
@@ -54,3 +54,6 @@ while True:
 
 #cap.release()
 cv2.destroyAllWindows
+
+
+print("Your look like your mood is " + predicted_emotion + ", right now so i would like to reccoment you some songs like:")
