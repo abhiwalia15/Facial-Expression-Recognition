@@ -79,3 +79,52 @@ for k, v in spotify_albums.items():
 
 # for key, values in spotify_albums:
 #     print(key + ',' + values)
+
+
+import time
+import numpy as np
+sleep_min = 2
+sleep_max = 5
+start_time = time.time()
+request_count = 0
+for i in spotify_albums:
+    audio_features(i)
+    request_count+=1
+    if request_count % 5 == 0:
+        print(str(request_count) + " playlists completed")
+        time.sleep(np.random.uniform(sleep_min, sleep_max))
+        print('Loop #: {}'.format(request_count))
+        print('Elapsed Time: {} seconds'.format(time.time() - start_time))
+
+
+dic_df = {}
+dic_df['album'] = []
+dic_df['track_number'] = []
+dic_df['id'] = []
+dic_df['name'] = []
+dic_df['uri'] = []
+dic_df['acousticness'] = []
+dic_df['danceability'] = []
+dic_df['energy'] = []
+dic_df['instrumentalness'] = []
+dic_df['liveness'] = []
+dic_df['loudness'] = []
+dic_df['speechiness'] = []
+dic_df['tempo'] = []
+dic_df['valence'] = []
+dic_df['popularity'] = []
+for album in spotify_albums: 
+    for feature in spotify_albums[album]:
+        dic_df[feature].extend(spotify_albums[album][feature])
+        
+len(dic_df['album'])
+
+import pandas as pd
+df = pd.DataFrame.from_dict(dic_df)
+
+
+print(len(df))
+final_df = df.sort_values('popularity', ascending=False).drop_duplicates('name').sort_index()
+print(len(final_df))
+
+final_df.to_csv()
