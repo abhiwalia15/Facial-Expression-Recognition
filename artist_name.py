@@ -30,8 +30,8 @@ for i in range(len(sp_albums['items'])):
     album_names.append(sp_albums['items'][i]['name'])
     album_uris.append(sp_albums['items'][i]['uri'])
     
-print(album_names[5:7])
-print(album_uris[5:7])
+# print(album_names[5:7])
+# print(album_uris[5:7])
 #Keep names and uris in same order to keep track of duplicate albums
 
 #print(uri)
@@ -63,7 +63,7 @@ def albumSongs(uri):
 
 spotify_albums = {}
 album_count = 0
-for i in album_uris[5:7]: #each album
+for i in album_uris: #each album
     albumSongs(i)
     print("Album " + str(album_names[album_count]) + " songs has been added to spotify_albums dictionary")
     album_count+=1 #Updates album count once all tracks have been added
@@ -71,15 +71,48 @@ for i in album_uris[5:7]: #each album
 #print(spotify_albums)
 
 
-for k, v in spotify_albums.items():
-    names = v['name'] 
-    #print(names)
-    for na in names:
-        print(na)
+# for k, v in spotify_albums.items():
+#     names = v['name'] 
+#     #print(names)
+#     for na in names:
+#         print(na)
 
 # for key, values in spotify_albums:
 #     print(key + ',' + values)
 
+
+def audio_features(album):
+    #Add new key-values to store audio features
+    spotify_albums[album]['acousticness'] = []
+    spotify_albums[album]['danceability'] = []
+    spotify_albums[album]['energy'] = []
+    spotify_albums[album]['instrumentalness'] = []
+    spotify_albums[album]['liveness'] = []
+    spotify_albums[album]['loudness'] = []
+    spotify_albums[album]['speechiness'] = []
+    spotify_albums[album]['tempo'] = []
+    spotify_albums[album]['valence'] = []
+    spotify_albums[album]['popularity'] = []
+    #create a track counter
+    track_count = 0
+    for track in spotify_albums[album]['uri']:
+        #pull audio features per track
+        features = sp.audio_features(track)
+        
+        #Append to relevant key-value
+        spotify_albums[album]['acousticness'].append(features[0]['acousticness'])
+        spotify_albums[album]['danceability'].append(features[0]['danceability'])
+        spotify_albums[album]['energy'].append(features[0]['energy'])
+        spotify_albums[album]['instrumentalness'].append(features[0]['instrumentalness'])
+        spotify_albums[album]['liveness'].append(features[0]['liveness'])
+        spotify_albums[album]['loudness'].append(features[0]['loudness'])
+        spotify_albums[album]['speechiness'].append(features[0]['speechiness'])
+        spotify_albums[album]['tempo'].append(features[0]['tempo'])
+        spotify_albums[album]['valence'].append(features[0]['valence'])
+        #popularity is stored elsewhere
+        pop = sp.track(track)
+        spotify_albums[album]['popularity'].append(pop['popularity'])
+        track_count+=1
 
 import time
 import numpy as np
@@ -127,4 +160,5 @@ print(len(df))
 final_df = df.sort_values('popularity', ascending=False).drop_duplicates('name').sort_index()
 print(len(final_df))
 
-final_df.to_csv()
+print(final_df.describe())
+final_df.to_csv('artists_chartic.csv')
