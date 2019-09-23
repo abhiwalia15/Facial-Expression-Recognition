@@ -54,6 +54,11 @@ def albumSongs(uri):
         spotify_albums[album]['id'].append(tracks['items'][n]['id'])
         spotify_albums[album]['name'].append(tracks['items'][n]['name'])
         spotify_albums[album]['uri'].append(tracks['items'][n]['uri'])
+        
+
+#albumSongs(album_uris[0])
+
+
 
 
 spotify_albums = {}
@@ -63,4 +68,7 @@ for i in album_uris: #each album
     print("Album " + str(album_names[album_count]) + " songs has been added to spotify_albums dictionary")
     album_count+=1 #Updates album count once all tracks have been added
 
-print(spotify_albums['name'][0])
+print(spotify_albums)
+
+# for key, values in spotify_albums:
+#     print(key + ',' + values)
