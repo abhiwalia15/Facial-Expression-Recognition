@@ -1,0 +1,36 @@
+,album,track_number,id,name,uri,acousticness,danceability,energy,instrumentalness,liveness,loudness,speechiness,tempo,valence,popularity
+0,Origins (Deluxe),1,6Rxzk0jfQfWEoZdKgquATf,Shots,spotify:track:6Rxzk0jfQfWEoZdKgquATf,0.00713,0.552,0.76,0.0113,0.313,-6.861,0.0367,104.957,0.338,24
+1,Origins (Deluxe),2,3IY0ZGEpYeJJbHes7KWIw4,Gold,spotify:track:3IY0ZGEpYeJJbHes7KWIw4,0.0801,0.416,0.459,0.00653,0.0551,-6.814,0.0317,164.929,0.286,24
+2,Origins (Deluxe),3,3DYtE7Rb0FeeoYD55o72cb,Smoke And Mirrors,spotify:track:3DYtE7Rb0FeeoYD55o72cb,0.0657,0.601,0.636,0.0218,0.446,-7.283,0.0283,109.987,0.0812,22
+3,Origins (Deluxe),4,6vGvE4bNV2xYrXphanPjgn,I’m So Sorry,spotify:track:6vGvE4bNV2xYrXphanPjgn,0.144,0.528,0.687,0.0,0.251,-5.954,0.0532,142.605,0.423,26
+4,Origins (Deluxe),5,5mbbpyD36CQKNLzaVFlv41,I Bet My Life,spotify:track:5mbbpyD36CQKNLzaVFlv41,0.367,0.545,0.659,0.00111,0.415,-8.18,0.0394,108.04,0.599,29
+5,Origins (Deluxe),6,7vG4PHaOKNoVTohCRRGyoO,Polaroid,spotify:track:7vG4PHaOKNoVTohCRRGyoO,0.514,0.424,0.603,1.84e-06,0.238,-6.832,0.0495,155.319,0.258,24
+6,Origins (Deluxe),7,2inNvzkI3euXgQl1Ev92iG,Friction,spotify:track:2inNvzkI3euXgQl1Ev92iG,0.0407,0.65,0.548,0.0404,0.293,-8.767,0.0357,103.95,0.29,24
+7,Origins (Deluxe),8,0NAXnJuDZLbrykVMWiiuD1,It Comes Back To You,spotify:track:0NAXnJuDZLbrykVMWiiuD1,0.0789,0.634,0.749,0.0166,0.0698,-7.895,0.029,100.002,0.49,20
+8,Origins (Deluxe),9,0E2Ydb6kAZ8LCaEaK1aQzu,Dream,spotify:track:0E2Ydb6kAZ8LCaEaK1aQzu,0.643,0.379,0.513,3.24e-05,0.069,-7.724,0.0492,142.067,0.108,23
+9,Origins (Deluxe),10,7Do33jqk6aD84Q4Ung5plB,Trouble,spotify:track:7Do33jqk6aD84Q4Ung5plB,0.307,0.388,0.889,0.00486,0.142,-5.281,0.116,159.96,0.327,20
+10,Origins (Deluxe),11,3kHdpwdalpAsJI9IvIVY52,Summer,spotify:track:3kHdpwdalpAsJI9IvIVY52,0.00536,0.539,0.824,0.0958,0.102,-7.397,0.0293,108.981,0.614,19
+11,Origins (Deluxe),12,0jR50WrG6QoXkzZNa3f83T,Hopeless Opus,spotify:track:0jR50WrG6QoXkzZNa3f83T,0.00541,0.627,0.656,9.55e-05,0.215,-6.163,0.0358,140.107,0.555,20
+12,Origins (Deluxe),13,1Jv02RuHMt9LUqiZoOr4kL,The Fall,spotify:track:1Jv02RuHMt9LUqiZoOr4kL,0.493,0.301,0.413,0.0433,0.112,-9.693,0.0418,120.143,0.0468,18
+13,Origins (Deluxe),14,2t1fTBad9HcM52Zb8MYql4,The Unknown,spotify:track:2t1fTBad9HcM52Zb8MYql4,0.0269,0.648,0.766,0.00062,0.0932,-8.113,0.0662,119.882,0.386,20
+14,Origins (Deluxe),15,2ghvOgxxX3BWQ84Dss8svN,Thief,spotify:track:2ghvOgxxX3BWQ84Dss8svN,0.00209,0.405,0.73,6.51e-05,0.113,-5.742,0.0423,149.94,0.156,23
+15,Origins (Deluxe),16,4V6Y5z37xODrrw2uDaHCR8,Warriors,spotify:track:4V6Y5z37xODrrw2uDaHCR8,0.0905,0.358,0.847,0.00283,0.253,-6.236,0.0612,78.043,0.367,44
+17,Evolve,2,32FP8G8nhZ9bxN1KAuCERp,Tiptoe,spotify:track:32FP8G8nhZ9bxN1KAuCERp,0.00157,0.527,0.82,1.88e-05,0.0882,-5.855,0.0325,120.041,0.25,28
+18,Evolve,3,2KoTKOi4cKiHglQXtEoJxN,It's Time,spotify:track:2KoTKOi4cKiHglQXtEoJxN,0.0162,0.656,0.884,0.0,0.145,-4.748,0.0372,105.009,0.86,32
+19,Evolve,4,2fxT5n1Q7gCgyhc2QwcmJ9,Demons,spotify:track:2fxT5n1Q7gCgyhc2QwcmJ9,0.19,0.505,0.71,0.00025,0.329,-3.015,0.0321,89.938,0.428,36
+20,Evolve,5,0R3mkRW66QDuy9VyCemMTz,On Top Of The World,spotify:track:0R3mkRW66QDuy9VyCemMTz,0.0893,0.635,0.926,4.53e-06,0.0928,-5.589,0.151,100.048,0.761,33
+21,Evolve,6,5GUcerrhoDzgArDHiUsQtj,Amsterdam,spotify:track:5GUcerrhoDzgArDHiUsQtj,0.00852,0.516,0.768,8.49e-06,0.136,-4.964,0.0362,115.005,0.204,28
+22,Evolve,7,5VVMmQawKcLidufIvgnjSv,Hear Me,spotify:track:5VVMmQawKcLidufIvgnjSv,0.000328,0.613,0.833,0.00069,0.0765,-4.694,0.0365,125.025,0.537,26
+23,Evolve,8,4uCygL4P8l2lMHg2EaOdaF,Every Night,spotify:track:4uCygL4P8l2lMHg2EaOdaF,0.0508,0.445,0.599,4.26e-05,0.178,-6.824,0.0298,139.775,0.417,25
+24,Evolve,9,3gnUJ718yQ9a4LNWnlK0nV,Bleeding Out,spotify:track:3gnUJ718yQ9a4LNWnlK0nV,0.0195,0.299,0.754,1.3e-06,0.103,-4.078,0.0732,169.373,0.295,30
+25,Evolve,10,4H8KxoWOrjxL3ju1IKPr6n,Underdog,spotify:track:4H8KxoWOrjxL3ju1IKPr6n,0.0038,0.685,0.831,6.2e-05,0.124,-4.568,0.042,99.983,0.57,24
+26,Evolve,11,1v94SD85gvrLzXqNhrMJTW,Nothing Left To Say / Rocks - Medley,spotify:track:1v94SD85gvrLzXqNhrMJTW,0.12,0.267,0.79,4.59e-05,0.635,-7.226,0.0472,108.033,0.0623,27
+27,Evolve,12,08bcLsgsL5PfPGYGPYr8OX,Cha-Ching (Till We Grow Older),spotify:track:08bcLsgsL5PfPGYGPYr8OX,0.0041,0.516,0.858,7.39e-06,0.0635,-6.112,0.0375,129.983,0.129,24
+28,Evolve,13,67RZT8iFKFY4qhmHzWDCm9,Working Man,spotify:track:67RZT8iFKFY4qhmHzWDCm9,0.0181,0.646,0.848,0.0,0.0911,-6.367,0.0361,101.006,0.648,24
+29,Evolve,14,1L6swUoUYSTnZOkMlWPXP3,My Fault,spotify:track:1L6swUoUYSTnZOkMlWPXP3,0.113,0.596,0.814,0.0195,0.112,-6.226,0.0392,108.51,0.519,28
+30,Evolve,15,6wIE6xTZhaRCZopgFVgGLa,Round And Round,spotify:track:6wIE6xTZhaRCZopgFVgGLa,0.00262,0.455,0.858,0.0,0.201,-4.221,0.044,141.957,0.479,28
+31,Evolve,16,3Jym93mEDErgU7vbgoTxtA,The River,spotify:track:3Jym93mEDErgU7vbgoTxtA,0.00986,0.395,0.637,0.00235,0.33,-5.757,0.0304,169.99,0.284,25
+32,Evolve,17,2CLidIjbPV8XKw4V45BhEm,America,spotify:track:2CLidIjbPV8XKw4V45BhEm,0.00309,0.567,0.543,0.0758,0.163,-7.736,0.0313,113.034,0.0899,26
+33,Evolve,18,049BMnRoIIHH3V5E65N3Sh,Selene,spotify:track:049BMnRoIIHH3V5E65N3Sh,0.000816,0.566,0.69,5.01e-06,0.157,-4.813,0.0254,95.006,0.562,27
+34,Evolve,19,18ZqLesjONvluYUwEhZ52H,Cover Up,spotify:track:18ZqLesjONvluYUwEhZ52H,0.000514,0.547,0.718,2.8e-06,0.105,-4.569,0.0335,135.191,0.156,23
+35,Evolve,20,6nDAs3PRe37fgqLfx51lBB,Radioactive,spotify:track:6nDAs3PRe37fgqLfx51lBB,0.0376,0.496,0.884,1.37e-06,0.44,-3.915,0.209,139.913,0.287,46
