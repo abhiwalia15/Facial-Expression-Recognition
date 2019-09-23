@@ -30,11 +30,11 @@ for i in range(len(sp_albums['items'])):
     album_names.append(sp_albums['items'][i]['name'])
     album_uris.append(sp_albums['items'][i]['uri'])
     
-print(album_names[0])
-print(album_uris[0])
+# print(album_names)
+#print(album_uris[0])
 #Keep names and uris in same order to keep track of duplicate albums
 
-
+#print(uri)
 def albumSongs(uri):
     album = uri #assign album uri to a_name
     spotify_albums[album] = {} #Creates dictionary for that specific album
@@ -56,17 +56,17 @@ def albumSongs(uri):
         spotify_albums[album]['uri'].append(tracks['items'][n]['uri'])
         
 
-albumSongs(album_uris)
+#albumSongs(album_uris)
 
 
 
 
-# spotify_albums = {}
-# album_count = 0
-# for i in album_uris: #each album
-#     albumSongs(i)
-#     print("Album " + str(album_names[album_count]) + " songs has been added to spotify_albums dictionary")
-#     album_count+=1 #Updates album count once all tracks have been added
+spotify_albums = {}
+album_count = 0
+for i in album_uris[:5]: #each album
+    albumSongs(i)
+    print("Album " + str(album_names[album_count]) + " songs has been added to spotify_albums dictionary")
+    album_count+=1 #Updates album count once all tracks have been added
 
 # print(spotify_albums)
 
