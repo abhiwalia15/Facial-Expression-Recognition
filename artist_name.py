@@ -63,7 +63,7 @@ def albumSongs(uri):
 
 spotify_albums = {}
 album_count = 0
-for i in album_uris[5:7]: #each album
+for i in album_uris: #each album
     albumSongs(i)
     print("Album " + str(album_names[album_count]) + " songs has been added to spotify_albums dictionary")
     album_count+=1 #Updates album count once all tracks have been added
@@ -150,17 +150,17 @@ for album in spotify_albums:
     for feature in spotify_albums[album]:
         dic_df[feature].extend(spotify_albums[album][feature])
         
-# len(dic_df['album'])
+len(dic_df['album'])
 
-# import pandas as pd
-# df = pd.DataFrame.from_dict(dic_df)
+import pandas as pd
+df = pd.DataFrame.from_dict(dic_df)
+
+print(len(df))
+final_df = df.sort_values('popularity', ascending=False).drop_duplicates('name').sort_index()
+print(len(final_df))
+
+print(final_df.describe())
+final_df.to_csv('artists_chartic.csv')
 
 
-
-# print(len(df))
-# final_df = df.sort_values('popularity', ascending=False).drop_duplicates('name').sort_index()
-# print(len(final_df))
-
-# print(final_df.describe())
-# final_df.to_csv('artists_chartic.csv')
 
