@@ -1,7 +1,8 @@
 import pandas as pd
+
 import numpy as numpy
 
-df = pd.read_csv('artists_chartic.csv', encoding='utf-8')
+df = pd.read_csv(r'artists_chartic.csv')
 
 # print(df.head())
 # print(df.describe())
@@ -19,14 +20,14 @@ mood = float(input("Enter the emotion: "))
     
 print('************************************')
 
-songs = pd.DataFrame()
+#songs = pd.DataFrame()
+sel = []
 
-if mood < 0.1:
-    #if (0 <= df['valence'] <= (mood + 0.15) & df['danceability'] <= (mood*8) & df['energy'] <= (mood*10)):
-    print('True')
-    songs = df[df['valence'] <= (mood + 0.15) & df['danceability'] <= (mood*8) & df['energy'] <= (mood*10)]
-
+if mood < 0.10:
+    if (0 <= df["valence"] <= (mood + 0.15)
+        & df["danceability"] <= (mood*8)
+        & df["energy"] <= (mood*10)):
+        sel.append(df["uri"])
+ 
 else:
     print("FUCK OFF")
-
-print(songs)

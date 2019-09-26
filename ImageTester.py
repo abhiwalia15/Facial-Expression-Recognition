@@ -13,7 +13,7 @@ model.load_weights('fer.h5')
 face_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
-#cap=cv2.VideoCapture(0)
+#
 cap = cv2.imread('dad.jpg')
 
 
@@ -57,3 +57,7 @@ cv2.destroyAllWindows
 
 
 print("Your look like your mood is " + predicted_emotion + ", right now so i would like to reccoment you some songs like:")
+
+def songs(predicted_emotion):
+    if predicted_emotion == 'sad' or 'disgust' or 'fear':
+        
