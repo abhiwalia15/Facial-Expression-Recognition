@@ -22,7 +22,8 @@ while True:
     gray_img= cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
 
     faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)
-
+    
+    #pre = []
 
     for (x,y,w,h) in faces_detected:
         cv2.rectangle(test_img,(x,y),(x+w,y+h),(255,0,0),thickness=7)
@@ -39,16 +40,22 @@ while True:
 
         emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
         predicted_emotion = emotions[max_index]
+        
+        #pre.append(predicted_emotion)
+        #print(predicted_emotion)
+
 
         cv2.putText(test_img, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
 
     resized_img = cv2.resize(test_img, (1000, 700))
     cv2.imshow('Facial emotion analysis ',resized_img)
 
-
-
+    
+    #print(pre)
     if cv2.waitKey(10) == ord('q'):#wait until 'q' key is pressed
         break
 
 cap.release()
 cv2.destroyAllWindows
+
+print(predicted_emotionpre)
