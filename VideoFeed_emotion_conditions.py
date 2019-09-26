@@ -47,31 +47,37 @@ while True:
         if predicted_emotion == 'happy':
             num = float(input("On a scale from 0 to 0.1 how disgust you are?\n"))
             print(num)
+            break
 
         #if he is supprise, make him listen slightly booooooo songs
         elif predicted_emotion == 'surprise':
             num = float(input("On a scale from 0.1 to 0.25 how angry you are?\n"))
             print(num)
+            break
 
         #if he is neutral, make him listen slightly better songs
         elif predicted_emotion == 'neutral':
             num = float(input("On a scale from 0.25 to 0.50 how scared you are?\n"))
             print(num)
+            break
 
         #if he is disgust, make him listen good songs
         elif predicted_emotion == 'disgust':
             num = float(input("On a scale from 0.50 to 0.75 how disgust you are?\n"))
             print(num)
+            break
 
         #if he is scared, make him listen better songs
         elif predicted_emotion == 'sad':
             num = float(input("On a scale from 0.75 to 0.90 how sad you are?\n"))
             print(num)
+            break
 
         #if he is sad or angry, make him listen happy songs
         else:
             num = float(input("On a scale from 0.90 to 1 how sad or angry you are?\n"))
             print(num)
+            break
 
 
         cv2.putText(test_img, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
