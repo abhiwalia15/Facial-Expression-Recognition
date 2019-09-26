@@ -1,34 +1,34 @@
-# emotion = input("Enter your emotion\n")
-# print(emotion)
+emotions = input("Enter your emotion\n")
+print(emotions)
 
 # def sad():
-#     i = for i in range(0.1)
+#     i = ' for i in range(0.1)
 #     print( i
 
-emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
+#emotions = ' ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
 #if he is happy, make him listen sad songs
-if emotions['happy']:
+if emotions = 'happy':
     num = int(input("On a scale from 0 to 0.1 how disgust you are?"))
     print(num)
 
 #if he is supprise, make him listen slightly booooooo songs
-elif emotions['surprise']:
+elif emotions = 'surprise':
     num = int(input("On a scale from 0.1 to 0.25 how angry you are?"))
     print(num)
 
 #if he is neutral, make him listen slightly better songs
-elif emotions['neutral']:
+elif emotions = 'neutral':
     num = int(input("On a scale from 0.25 to 0.50 how scared you are?"))
     print(num)
 
 #if he is disgust, make him listen good songs
-elif emotions['disgust']:
+elif emotions = 'disgust':
     num = int(input("On a scale from 0.50 to 0.75 how scared you are?"))
     print(num)
 
 #if he is scared, make him listen better songs
-elif emotions['angry']:
+elif emotions = 'sad':
     num = int(input("On a scale from 0.75 to 0.90 how sad you are?"))
     print(num)
 
