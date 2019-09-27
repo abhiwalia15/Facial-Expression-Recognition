@@ -22,12 +22,13 @@ print('************************************')
 
 #songs = pd.DataFrame()
 sel = []
-
-if mood < 0.10:
-    if (0 <= df["valence"] <= (mood + 0.15)
-        & df["danceability"] <= (mood*8)
-        & df["energy"] <= (mood*10)):
-        sel.append(df["uri"])
+for i in range(len(df)):
+    if mood < 0.10:
+        if ((df.loc[i,"valence"]in range(0,mood+0.15))  and (df.loc[i,"danceability"] <= (mood*8)) and (df.loc[i,"energy"] <= (mood*10))):
+            sel.append(df["uri"])
+            print(sel)
  
-else:
-    print("FUCK OFF")
+    else:
+        print("FUCK OFF")
+# for i in sel:
+#     print(i)
