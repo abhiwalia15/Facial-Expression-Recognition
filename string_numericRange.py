@@ -15,7 +15,7 @@ if emotions == 'happy':
 #if he is supprise, make him listen slightly booooooo songs
 elif emotions == 'surprise':
     num = float(input("On a scale from 0.1 to 0.25 how angry you are?\n"))
-    print(num)
+    print(num) 
 
 #if he is neutral, make him listen slightly better songs
 elif emotions == 'neutral':
