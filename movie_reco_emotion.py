@@ -85,7 +85,7 @@ if __name__ == '__main__':
     a = main(emotion)
     
     for c in a:
-        print(c.find_all('a')[0].text)
+        print("Movies : " + c.find_all('a')[0].text)
     
     
     #print(a[:10])  
