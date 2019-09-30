@@ -197,17 +197,17 @@ print(emotions)
 
 #if he is happy, make him listen sad songs
 if emotions == 'happy':
-    mood = float(input("On a scale from 0 to 0.1 how disgust you are?\n"))
+    mood = float(input("On a scale from 0 to 0.1 how happy you are?\n"))
     print(mood)
 
 #if he is supprise, make him listen slightly booooooo songs
 elif emotions == 'surprise':
-    mood = float(input("On a scale from 0.1 to 0.25 how angry you are?\n"))
+    mood = float(input("On a scale from 0.1 to 0.25 how surprise you are?\n"))
     print(mood) 
 
 #if he is neutral, make him listen slightly better songs
 elif emotions == 'neutral':
-    mood = float(input("On a scale from 0.25 to 0.50 how scared you are?\n"))
+    mood = float(input("On a scale from 0.25 to 0.50 how neutral you are?\n"))
     print(mood)
 
 #if he is disgust, make him listen good songs
@@ -216,8 +216,8 @@ elif emotions == 'disgust':
     print(mood)
 
 #if he is scared, make him listen better songs
-elif emotions == 'sad':
-    mood = float(input("On a scale from 0.75 to 0.90 how sad you are?\n"))
+elif emotions == 'fear':
+    mood = float(input("On a scale from 0.75 to 0.90 how scared you are?\n"))
     print(mood)
 
 #if he is sad or angry, make him listen happy songs
@@ -274,7 +274,7 @@ else:
 #print(links + names)
 
 for j in range(len(links)):
-    print(str(j) +'. LINKS:'+ links[j] + '---  NAMES:' + names[j])
+    print(str(j) +'. LINKS : '+ links[j] + '  |  NAMES : ' + names[j])
 
 
 
