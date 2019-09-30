@@ -264,35 +264,35 @@ from spotipy.oauth2 import SpotifyClientCredentials #To access authorised Spotif
 df = pd.read_csv(r'artists_chartic.csv')
 
 
-print('************************************')
-print("1.HAPPY\n2.DISGUST\n3.SURPRISE\n4.NEUTRAL\n5.SAD\n6.ANGRY\n7.FEAR\n")
-emotions = input("Enter your emotion\n")
-print(emotions)
+# print('************************************')
+# print("1.HAPPY\n2.DISGUST\n3.SURPRISE\n4.NEUTRAL\n5.SAD\n6.ANGRY\n7.FEAR\n")
+# emotions = input("Enter your emotion\n")
+# print(emotions)
 
 ###emotions = ' ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
 #if he is happy, make him listen sad songs
-if emotions == 'happy':
+if predicted_emotion == 'happy':
     mood = float(input("On a scale from 0 to 0.1 how happy you are?\n"))
     print(mood)
 
 #if he is supprise, make him listen slightly booooooo songs
-elif emotions == 'surprise':
+elif predicted_emotion == 'surprise':
     mood = float(input("On a scale from 0.1 to 0.25 how surprise you are?\n"))
     print(mood) 
 
 #if he is neutral, make him listen slightly better songs
-elif emotions == 'neutral':
+elif predicted_emotion == 'neutral':
     mood = float(input("On a scale from 0.25 to 0.50 how neutral you are?\n"))
     print(mood)
 
 #if he is disgust, make him listen good songs
-elif emotions == 'disgust':
+elif predicted_emotion == 'disgust':
     mood = float(input("On a scale from 0.50 to 0.75 how disgust you are?\n"))
     print(mood)
 
 #if he is scared, make him listen better songs
-elif emotions == 'fear':
+elif predicted_emotion == 'fear':
     mood = float(input("On a scale from 0.75 to 0.90 how scared you are?\n"))
     print(mood)
 
@@ -448,7 +448,7 @@ if __name__ == '__main__':
     
     print('************************************')
     
-    a = main(emotions)
+    a = main(predicted_emotion)
     
     for c in a:
         print("Movies : " + c.find_all('a')[0].text)
