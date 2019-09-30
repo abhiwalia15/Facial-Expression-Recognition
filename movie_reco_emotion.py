@@ -76,6 +76,7 @@ if __name__ == '__main__':
     print("What is your mood right now shitbag:\n")
     print('************************************')
     print("1.Sad\n2.Disgust\n3.Anger\n4.Anticipation\n5.Fear\n6.Enjoyment\n7.Trust\n8.Surprise")
+    #NEUTRAL
     
     emotion = input("Enter the emotion: ")
     
