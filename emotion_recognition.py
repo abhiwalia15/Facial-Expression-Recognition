@@ -50,7 +50,7 @@ train_y=np_utils.to_categorical(train_y, num_classes=num_labels)
 test_y=np_utils.to_categorical(test_y, num_classes=num_labels)
 
 #cannot produce
-#normalizing data between oand 1
+#normalizing data between o and 1
 X_train -= np.mean(X_train, axis=0)
 X_train /= np.std(X_train, axis=0)
 
