@@ -351,8 +351,8 @@ else:
 
 for j in range(len(links)):
     print(str(j) +'. LINKS : '+ links[j] + '  |  NAMES : ' + names[j])
-    bf = pd.DataFrame(links[j], columns='URI')
-    bf.head()
+    # bf = pd.DataFrame(links[j], columns='URI')
+    # bf.head()
 
 # *************************************************************
 # ********************************************************
