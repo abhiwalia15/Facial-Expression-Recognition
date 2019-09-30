@@ -28,7 +28,7 @@ def main(emotion):
   
     # IMDb Url for Thriller genre of 
     # movie against emotion Anticipation 
-    elif(emotion == "Anticipation" or emotion == "anticipation"): 
+    elif(emotion == "neutral" or emotion == "neutral"): 
         urlhere = 'http://www.imdb.com/search/title?genres=thriller&title_type=feature&sort=moviemeter, asc'
   
   # IMDb Url for Sport genre of 
@@ -38,13 +38,13 @@ def main(emotion):
   
     # IMDb Url for Thriller genre of 
     # movie against emotion Enjoyment 
-    elif(emotion == "Enjoyment" or emotion == "enjoyment"): 
+    elif(emotion == "Happy" or emotion == "happy"): 
         urlhere = 'http://www.imdb.com/search/title?genres=thriller&title_type=feature&sort=moviemeter, asc'
   
     # IMDb Url for Western genre of 
-    # movie against emotion Trust 
-    elif(emotion == "Trust" or emotion == "trust"): 
-        urlhere = 'http://www.imdb.com/search/title?genres=western&title_type=feature&sort=moviemeter, asc'
+    # # movie against emotion Trust 
+    # elif(emotion == "Trust" or emotion == "trust"): 
+    #     urlhere = 'http://www.imdb.com/search/title?genres=western&title_type=feature&sort=moviemeter, asc'
   
     # IMDb Url for Film_noir genre of 
     # movie against emotion Surprise 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
 
     print("What is your mood right now shitbag:\n")
     print('************************************')
-    print("1.Sad\n2.Disgust\n3.Anger\n4.Anticipation\n5.Fear\n6.Enjoyment\n7.Trust\n8.Surprise")
+    print("1.Sad\n2.Disgust\n3.Anger\n4.Neutral\n5.Fear\n6.Happy\n7.Surprise")
     #NEUTRAL
     
     emotion = input("Enter the emotion: ")
