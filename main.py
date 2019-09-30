@@ -271,10 +271,16 @@ elif mood >= 0.90:
 else:
     print("Try another mood")
 
-print(links + names)
+#print(links + names)
 
-# for j in range(len(sel)):
-#     print(str(j) +'.'+ sel[j] + '\n')
+for j in range(len(links)):
+    print(str(j) +'. LINKS:'+ links[j] + '---  NAMES:' + names[j])
+
+
+
+
+
+
 
 
 # *************************************************************
