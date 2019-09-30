@@ -366,16 +366,16 @@ def main(emotion):
 if __name__ == '__main__': 
     
 
-    print("What is your mood right now shitbag:\n")
-    print('************************************')
-    print("1.Sad\n2.Disgust\n3.Anger\n4.Neutral\n5.Fear\n6.Happy\n7.Surprise")
+    # print("What is your mood right now shitbag:\n")
+    # print('************************************')
+    # print("1.Sad\n2.Disgust\n3.Anger\n4.Neutral\n5.Fear\n6.Happy\n7.Surprise")
     #NEUTRAL
     
-    emotion = input("Enter the emotion: ")
+    #emotion = input("Enter the emotion: ")
     
     print('************************************')
     
-    a = main(emotion)
+    a = main(emotions)
     
     for c in a:
         print("Movies : " + c.find_all('a')[0].text)
