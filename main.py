@@ -189,7 +189,7 @@ df = pd.read_csv(r'artists_chartic.csv')
 
 
 print('************************************')
-print("1.Sad\n2.Disgust\n3.Anger\n4.Anticipation\n5.Fear\n6.Enjoyment\n7.Trust\n8.Surprise")
+print("1.HAPPY\n2.DISGUST\n3.SURPRISE\n4.NEUTRAL\n5.SAD\n6.ANGRY\n7.FEAR\n")
 emotions = input("Enter your emotion\n")
 print(emotions)
 
