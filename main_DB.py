@@ -485,16 +485,17 @@ import sqlite3
   
 conn = sqlite3.connect('pythonDB.db') 
 c = conn.cursor() 
-  
-def create_table(): 
-    c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOVIE_NAMES TEXT)') 
-  
-def data_entry(): 
-    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , names, links, movi) 
-    conn.commit() 
-  
-create_table() 
-data_entry() 
-  
+ 
+c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOVIE_NAMES TEXT)') 
+
+SONGS_NAMES = names
+ 
+URI = links
+
+MOVIE_NAMES = movi
+
+c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES, URI, MOVIE_NAMES))
+conn.commit() 
+   
 c.close() 
 conn.close() 
