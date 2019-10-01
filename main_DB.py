@@ -490,7 +490,7 @@ def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOVIE_NAMES TEXT)') 
   
 def data_entry(): 
-    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (names, links, movi)) 
+    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , names, links, movi) 
     conn.commit() 
   
 create_table() 
