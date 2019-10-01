@@ -3,7 +3,9 @@ import sqlite3
 con = sqlite3.connect('testfile.db')
 print("OPENED")
 
-table = "create table tab (song_names string, uri text, movies text)"
+tables = "create table tab (song_names string, uri text, movies text)"
 
-con.execute(table)
 print("Table created")
+
+tab = "insert into tab (song_names , uri , movies ) values ('bad lier', '1135g1g1fs1', 'project x')"
+con.execute(tab)
