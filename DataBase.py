@@ -57,9 +57,9 @@ def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS RecordONE (Number REAL, Name TEXT)') 
   
 def data_entry(): 
-    list = [[1223, 'abhi'], [15, 'blon']]
+    list = [1223, 'abhi'], [15, 'blon']
     print(list)
-    c.execute("INSERT INTO RecordONE (Number, Name) VALUES(?, ?)", (number, name)) 
+    #c.execute("INSERT INTO RecordONE (Number, Name) VALUES(?, ?)", (number, name)) 
     conn.commit() 
   
 create_table() 
