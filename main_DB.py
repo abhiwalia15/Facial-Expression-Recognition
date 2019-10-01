@@ -479,7 +479,7 @@ if __name__ == '__main__':
 
 # print(links)
 # print(names)
-# print(movi)
+#print(movi[:3])
 
 import sqlite3 
   
@@ -492,10 +492,10 @@ SONGS_NAMES = names
  
 URI = links
 
-MOVIE_NAMES = movi
+MOVIE_NAMES = movi[:3]
 
-for i in range(len(MOVIE_NAMES):)
-    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAME[i], URI[i], MOVIE_NAMES[i]))
+for i in range(len(MOVIE_NAMES)):
+    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES[i], URI[i], MOVIE_NAMES[i]))
     conn.commit() 
    
 c.close() 
