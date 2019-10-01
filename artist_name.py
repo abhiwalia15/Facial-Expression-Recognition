@@ -155,6 +155,8 @@ len(dic_df['album'])
 import pandas as pd
 df = pd.DataFrame.from_dict(dic_df)
 
+
+
 print(len(df))
 final_df = df.sort_values('popularity', ascending=False).drop_duplicates('name').sort_index()
 print(len(final_df))
