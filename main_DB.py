@@ -492,9 +492,9 @@ SONGS_NAMES = names
  
 URI = links
 
-MOVIE_NAMES = movi[:3]
+MOVIE_NAMES = movi
 
-for i in range(len(MOVIE_NAMES)):
+for i in range(len(URI)):
     c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES[i], URI[i], MOVIE_NAMES[i]))
     conn.commit() 
    
