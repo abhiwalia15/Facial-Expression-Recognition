@@ -487,10 +487,10 @@ conn = sqlite3.connect('pythonDB.db')
 c = conn.cursor() 
   
 def create_table(): 
-    c.execute('CREATE TABLE IF NOT EXISTS RecordONE (Number REAL, Name TEXT)') 
+    c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOVIE_NAMES TEXT)') 
   
 def data_entry(): 
-    c.execute("INSERT INTO RecordONE (songs, uri, movies) VALUES(?, ?, ?)", links, names, movi) 
+    c.execute("INSERT INTO RecordONE (songs, uri, movies) VALUES(?, ?, ?)" , names, links, movi) 
     conn.commit() 
   
 create_table() 
