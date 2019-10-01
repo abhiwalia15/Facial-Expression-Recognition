@@ -477,26 +477,26 @@ if __name__ == '__main__':
 # *********************************************************
 # *************************************************
 
-# print(links)
-# print(names)
-#print(movi[:3])
+print(links)
+print(names)
+print(movi[:3])
 
-import sqlite3 
+# import sqlite3 
   
-conn = sqlite3.connect('pythonDB.db') 
-c = conn.cursor() 
+# conn = sqlite3.connect('pythonDB.db') 
+# c = conn.cursor() 
  
-c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOVIE_NAMES TEXT)') 
+# c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOVIE_NAMES TEXT)') 
 
-SONGS_NAMES = names
+# SONGS_NAMES = names
  
-URI = links
+# URI = links
 
-MOVIE_NAMES = movi[:3]
+# MOVIE_NAMES = movi[:3]
 
-for i in range(len(MOVIE_NAMES)):
-    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES[i], URI[i], MOVIE_NAMES[i]))
-    conn.commit() 
+# for i in range(len(MOVIE_NAMES)):
+#     c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES[i], URI[i], MOVIE_NAMES[i]))
+#     conn.commit() 
    
-c.close() 
-conn.close() 
+# c.close() 
+# conn.close() 
