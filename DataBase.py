@@ -9,3 +9,9 @@ import sqlite3
 
 # tab = "insert into tab (song_names , uri , movies ) values ('bad lier', '1135g1g1fs1', 'project x')"
 # con.execute(tab)
+
+
+con = sqlite3.connect('test.db')
+c = conn.cursor()
+
+c.execute("insert into list (songs, uri, movies) values('abc', 'asd', 'adfg')")
