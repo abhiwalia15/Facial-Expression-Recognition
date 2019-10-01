@@ -61,8 +61,8 @@ def data_entry():
     print(list)
     for lists in list:
         print(lists)
-        # c.execute("INSERT INTO RecordONE (Number, Name) VALUES(?, ?)", lists) 
-        # conn.commit() 
+        c.execute("INSERT INTO RecordONE (Number, Name) VALUES(?, ?)", lists) 
+        conn.commit() 
   
 create_table() 
 data_entry() 
