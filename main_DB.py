@@ -494,8 +494,9 @@ URI = links
 
 MOVIE_NAMES = movi
 
-c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES, URI, MOVIE_NAMES))
-conn.commit() 
+while True:
+    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES, URI, MOVIE_NAMES))
+    conn.commit() 
    
 c.close() 
 conn.close() 
