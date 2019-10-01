@@ -11,7 +11,7 @@ import sqlite3
 # con.execute(tab)
 
 
-con = sqlite3.connect('test.db')
-c = conn.cursor()
+# con = sqlite3.connect('test.db')
+# c = con.cursor()
 
-c.execute("insert into list (songs, uri, movies) values('abc', 'asd', 'adfg')")
+# c.execute("insert into list (songs, uri, movies) values(?,?,?)", ('asd','agh','aaa'))
