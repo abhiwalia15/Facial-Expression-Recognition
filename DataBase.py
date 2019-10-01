@@ -59,8 +59,9 @@ def create_table():
 def data_entry(): 
     list = [1223, 'abhi'], [15, 'blon']
     print(list)
-    #c.execute("INSERT INTO RecordONE (Number, Name) VALUES(?, ?)", (number, name)) 
-    conn.commit() 
+    for lists in list:
+        c.execute("INSERT INTO RecordONE (Number, Name) VALUES(?, ?)", list) 
+        conn.commit() 
   
 create_table() 
 data_entry() 
