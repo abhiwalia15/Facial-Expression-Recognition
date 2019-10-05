@@ -486,7 +486,9 @@ import sqlite3
 conn = sqlite3.connect('pythonDB.db') 
 c = conn.cursor() 
  
-c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOVIE_NAMES TEXT)') 
+c.execute('CREATE TABLE IF NOT EXISTS RecordONE (SONGS_NAMES TEXT, URI TEXT, MOOD TEXT)') 
+
+c.execute('CREATE TABLE IF NOT EXISTS RecordTWO (MOVIE_NAMES TEXT, MOOD TEXT)') 
 
 SONGS_NAMES = names
  
@@ -495,8 +497,13 @@ URI = links
 MOVIE_NAMES = movi
 
 for i in range(len(URI)):
-    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOVIE_NAMES) VALUES(?, ?, ?)" , (SONGS_NAMES[i], URI[i], MOVIE_NAMES[i]))
+    c.execute("INSERT INTO RecordONE (SONGS_NAMES, URI, MOOD) VALUES(?, ?, ?)" , (SONGS_NAMES[i], URI[i], predicted_emotion))
     conn.commit() 
-   
+
+for i in range(len(MOVIE_NAMES)):
+    c.execute("INSERT INTO RecordTWO (MOVIE_NAMES, MOOD) VALUES(?, ?)" , (MOVIE_NAMES[i], predicted_emotion))
+    conn.commit()
+
+
 c.close() 
 conn.close() 
