@@ -2,7 +2,7 @@
 
 
 Program is trained for 30 epochs 
-And i have got a accuracy of 70% accuracy.
+And i have got a accuracy of 94% accuracy.
 
 Dependencies:
 pip install numpy 
