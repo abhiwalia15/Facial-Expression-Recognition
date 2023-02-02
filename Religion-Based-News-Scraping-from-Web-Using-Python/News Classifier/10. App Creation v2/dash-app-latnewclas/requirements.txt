@@ -38,5 +38,5 @@ six==1.12.0
 soupsieve==1.9.2
 traitlets==4.3.2
 urllib3==1.25.3
-Werkzeug==0.15.4
+Werkzeug==0.15.5
 wincertstore==0.2
